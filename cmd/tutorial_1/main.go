@@ -122,6 +122,16 @@ func main() {
 	fmt.Println(intArr[1:3]) // first and second index
 
 	fmt.Println(&intArr[2]) // prints out location of memory
+
+	var myMap2 = map[string]uint8{"Adam": 23, "Sarah": 45}
+	fmt.Println(myMap2["Adam"])
+
+	for name, age := range myMap2 {
+		fmt.Printf("Name: %v, Age:%v \n", name, age)
+	}
+
+	// loop over keys, then age = values thatasreturned if we want to,
+	// normally loops over index, then like add age for value, add another variable name for value retrieval
 }
 
 func printMe(printValue string) {
